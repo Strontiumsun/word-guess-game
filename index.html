@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Word Guessing Game</h1>
+    <h2>The theme is Big Cats</h2>
+    <div id="guess-this-word"></div>
+    <!-- I know we have to put this in its own file, but at the start, I'm going to put the JS in the HTML -->
+    <script type="text/javascript">
+        // here is my array
+        var bigCats = ["Tiger", "Lion", "Leopard", "Jaguar", "Panther", "Bobcat", "Cheetah"];
+        var bigCatsLow = ["tiger", "lion", "leopard", "jaguar", "panther", "bobcat", "cheetah"];
+        var guessArray = ["a"]
+
+
+        var guess = "Lion";
+        var letter = "L";
+        var letterLow = "a";
+        var totalLetter = 0;
+
+        // bigCats correctly logs each item in the array
+        for (var i = 0; i < bigCats.length; i++) {
+            console.log("I Like " + bigCats[i]);
+            //with this equation, the console returns that Lion is the good guess, and the others are wrong
+            // if (bigCats[i].indexOf(guess) >= 0) {
+            //     console.log("Good guess!");
+            // }
+            // else {
+            //     console.log("Wrong guess");
+            // }
+
+            //with this equation, the console returns all the words that start with L
+            // if (bigCats[i].indexOf(letter) >= 0) {
+            //     console.log("Got it!");
+            // }
+            // else {
+            //     console.log("Not it");
+            // }
+
+            //what if the array is all in lower case? I think that's a good idea.
+            //this finds all the letters of a kind in each word in the lower case array.
+            if (bigCatsLow[i].indexOf(letterLow) >= 0) {
+                console.log("Found it! " + totalLetter + 1);
+            }
+            else {
+                console.log("No dice...");
+            }
+
+            //now I want this previous equation to tell me HOW many times the letter was found
+            // It counts one appearance, but not the second... hmmm... maybe it needs to loop?
+            // no, that can't be it. Looping only works for arrays
+        }
+
+
+
+        // I'm going to create a second function
+        // this is something I'm copying from a website
+        // for (var i = 0; i < bigCats.length; ++i) {
+        //     if (bigCats[i].indexOf(letterLow) >= 0) {
+        //         console.log(totalLetter);
+        //     }
+
+        // }
+
+        // now I will define a variable that is the letter L
+
+
+        // now I will try to copy what we did in the Joan of Arc assignment
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

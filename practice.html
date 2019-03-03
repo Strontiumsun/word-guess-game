@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        #hidden {
+            color: black;
+        }
+
+        #visible {
+            color: white;
+        }
+
+        body {
+            background-color: black;
+        }
+    </style>
+
+
+    <div id="hidden">P I A N O</div>
+    <div id="visible">_ _ _ _ _</div>
+    <div id="visible">Press any key to reveal the word!</div>
+
+
+    <script type="text/javascript">
+        document.onkeypress = function (event) {
+            console.log("key press");
+
+            var reveal = document.getElementById("hidden").setAttribute("id", "visible");
+
+
+
+            // var original = document.getElementById("hidden");
+            // var reveal = document.getElementById("visible");
+            // original.prependChild(reveal);
+        }
+
+
+
+    </script>
+</body>
+
+</html>

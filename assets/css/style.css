@@ -1,0 +1,33 @@
+body {
+    background-color:#FFFF99;
+}
+.container {
+    margin: 0 auto;
+    width: 960px;
+    background-color: whitesmoke;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 15px;
+    margin-top: 20px;
+}
+#title {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 10px;
+}
+#theme {
+    font-size: 20px;
+}
+#placeholder {
+    background-color: white;
+    margin: 0 auto;
+    width: 300px;
+    padding: 30px;
+}
+#guess-here {
+    color: grey;
+    margin: 10px;
+}
+#guesses-left {
+    font-size: 20px;
+}
